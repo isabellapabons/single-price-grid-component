@@ -1,0 +1,189 @@
+body {
+    background-color: hsl(206, 47%, 93%);
+    font-family: 'Karla';
+    font-size: 16px;
+    margin: 8rem;
+}
+
+.three-containers {
+    padding: 1rem;
+    width: 60%;
+}
+
+.grid-container {
+    display: grid;
+    justify-items: center;  /* Centers grid horizontally */
+}
+
+/* Screens 1440px and wider */
+
+@media screen and (min-width: 1440px) { 
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Two-column layout */
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .three-containers {
+        padding: 3rem;
+        width: 100%; /* Full width on larger screens */
+    }
+
+    .join-community-container {
+        grid-column: span 2; /* Make this container span both columns */
+    }
+}
+
+/* First Container */
+
+.join-community-container {
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.refund-policy {
+    color: hsl(70, 60%, 58%);
+    font-size: 1.4rem;
+}
+
+.first-heading {
+    color: hsl(179, 62%, 43%);
+    font-size: 2rem;
+}
+
+.paragraph {
+    color: hsl(231, 5%, 70%);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding-bottom: 1.8rem;
+    text-align: left;
+}
+
+/* Screens 1440px and wider */
+
+@media screen and (min-width: 1440px) {
+
+    .join-community-container {
+        padding: 3rem;
+    }
+
+    .first-heading {
+        font-size: 3rem;
+    }
+ 
+    .refund-policy {
+        font-size: 2rem;
+        margin-bottom: -1rem;
+    }
+ 
+    .paragraph {
+        font-size: 2.1rem;
+        line-height: 3rem;
+        padding-bottom: 0rem;
+    }
+}
+
+/* Second Container */
+
+.monthly-subscription-container {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.subscription-fee {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.per-month {
+    color: hsl(180, 53%, 64%);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.full-access-second-container {
+    color: hsl(181, 79%, 89%);
+    margin-left: 4px;
+}
+
+.sign-up-button {
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: block;
+    margin: 0 auto; /* center button */
+    padding: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+}
+
+.sign-up-button:hover {
+    background-color: hsl(71, 73%, 64%);
+}
+
+/* Screens 1440px and wider */
+
+@media screen and (min-width: 1440px) {
+    .monthly-subscription-container {
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    .subscription-fee  {
+        font-size: 3rem;
+    }
+
+    .per-month {
+        font-size: 1.5rem;
+    }
+   
+    .full-access-second-container  {
+        font-size: 1.4rem;
+        margin-top: -1rem;
+    }
+
+    .sign-up-button {
+       font-size: 25px;
+       font-weight: bold;
+       height: 12%;
+       margin-left: 1%;
+       padding: 1rem;
+       width: 70%;
+    }
+}
+
+/* Third Container */
+
+.why-us-container {
+    background-color: hsl(179, 47%, 52%);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.why-us-list {
+    color: hsl(186, 92%, 85%);
+    margin: 12px;
+}
+
+.third-heading {
+    margin-left: 1rem;
+}
+
+.second-third-headings {
+    color: white;
+    font-size: 2rem;
+}
+
+/* Screens 1440px and wider */
+
+@media screen and (min-width: 1440px) { 
+    .why-us-container {
+        border-radius: 0px 0px 10px 0px;
+    }
+    
+    .why-us-list {
+        font-size: 1.4rem;
+        line-height: 0.5;
+    }
+}
+
